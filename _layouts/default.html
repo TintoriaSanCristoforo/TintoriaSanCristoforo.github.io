@@ -1,14 +1,36 @@
-{% include header.html %}
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="container container-left">
-    <div class="row">
-        <div class="col-md-3 hidden-xs">
-            {% include sidebar.html %}
+<head>
+    <meta charset="UTF-8">
+    <title>{{ site.name }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="{{ site.baseurl }}/js/jquery-2.1.4.min.js"></script>
+    <script src="{{ site.baseurl }}/js/bootstrap-3.3.5.min.js"></script>
+    <link href="{{ site.baseurl }}/css/bootstrap-3.3.5.min.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/css/theme.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div id="header" class="blog-header">
+            {% include header.html %}
         </div>
-        <div class="col-md-9">
-            {{ content }}
+        <div class="row">
+            <div class="col-md-3 sidebar">
+                {% include sidebar_sx.html %}
+            </div>
+            <div class="col-md-6">
+                {{ content }}
+            </div>
+            <div class="col-md-3 sidebar">
+                {% include sidebar_dx.html %}
+            </div>
+        </div>
+        <div id="footer" class="blog-footer">
+            {% include footer.html %}
         </div>
     </div>
-</div>
-
-{% include footer.html %}
+    {% include analytics.html %}
+</body>
+</html>

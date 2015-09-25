@@ -1,51 +1,91 @@
-body {
-    padding-top: 60px;
-    padding-bottom: 60px;
+/* set a max-width for horizontal fluid layout and make it centered */
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1600px; /* or 950px */
 }
 
-.copyright {
-    color: #ffffff;
-}
-
-.footer {
+/* Common */
+.centered {
     text-align: center;
 }
 
-.footer a {
-    color: #ee4444;
+h3 {
+    font-size: 20px;
 }
 
-.sidebar h1 {
-    color: #ee4444;
-    font-size: 1.3em;
+/* Header */
+div#header .lead {
+    text-align: center;
 }
 
-.sidebar a {
-    color: #428bca;
+/* Content */
+div.central {
+    border: 1px solid #dbdada;
+    margin-bottom: 20px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+    border-radius: 4px;
+    padding: 10px 20px;
 }
 
-.sidebar li {
-    margin-top: .7em;
-    line-height: 1em;
+/* Sidebars */
+div.sidebar .sidebar-module {
+    border: 1px solid #dbdada;
+    margin-bottom: 20px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+    border-radius: 4px;
 }
 
-.sidebar a:hover {
-    color: #3071a9;
+div.sidebar .sidebar-module:last-of-type {
+    margin-bottom: 0px;
 }
 
-.container-left {
+div.sidebar .sidebar-module h1 {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #f8f6f6;
+    margin: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+    border-radius: 4px;
+}
+
+div.sidebar .sidebar-module p {
+    padding: 10px 20px;
     margin: 0;
 }
 
-.well h1 {
-    color: #ee4444;
-    font-size: 1.3em;
+div.sidebar .sidebar-module ul {
+    padding: 10px 10px 10px 40px;
+    margin: 0;
 }
 
-.author {
-    color: #ee4444;
+/* Santi*/
+div.sidebar div#santi table {
+    width: 100%;
+    margin: 0;
 }
 
-.author a {
-    color: #ee4444;
+div.sidebar div#santi p {
+    margin: 0px;
+}
+
+div.sidebar div#santi b {
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+    display: block;
+  }
+
+div.sidebar div#santi td {
+    font-size: inherit;
+    font-family: inherit;
+    background-color: #FFFFFF;
+  }
+
+/* Footer */
+div#footer .copyright {
+    text-align: center;
 }

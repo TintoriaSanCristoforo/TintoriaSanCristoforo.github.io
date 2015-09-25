@@ -1,0 +1,35 @@
+<div class="sidebar-module">
+    <h1>I detti di nonna zita</h1>
+    <p><script src="js/zita.js"></script></p>
+</div>
+
+<div class="sidebar-module">
+    <h1>Links utili</h1>
+        <ul>
+            <li><a href="http://assosecco.com/">Assosecco</a></li>
+        </ul>
+</div>
+
+<div class="sidebar-module">
+    <h1>I santi di oggi</h1>
+    <script>
+    $.ajax({
+        url: 'http://www.tuttiisanti.it/api/v1/today',
+        type: 'GET',
+        crossDomain: true,
+        dataType: 'jsonp'})
+        .done(function( html ) {
+            $("#santi").append("<b>" + html.saint[0].name + "</b><br />");
+            if (html.saint.length > 10) {
+                var sn = 10;
+            } else {
+                var sn = html.saint.length;
+            }
+            for (var i = 1; i < sn; i++) {
+                $("#santi").append(html.saint[i].name + "<br />");
+            }
+            console.log( html.saint[1] );
+        });
+    </script>
+    <p id='santi'></p>
+</div>

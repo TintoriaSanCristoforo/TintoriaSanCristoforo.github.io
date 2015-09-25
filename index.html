@@ -2,30 +2,35 @@
 layout: default
 ---
 
-{% for post in paginator.posts %}
-<div class="article">
-    <div class="well">
-        <h1><a href="{{ site.baseurl}}{{ post.url }}">{{ post.date | date: "%b %-d, %Y" }} - {{ post.title }}</a></h1>
-        {% if site.comments == true and post.comments == true and site.disqus != '' %}
-          <p class="author"><a href="{{ site.baseurl }}{{ post.url }}/#disqus_thread">Comments</a></p>
-        {% endif %}
-        <div class="content">
-            {{ post.content }}
-        </div>
-    </div>
-</div>
-{% endfor %}
+<div class="central">
+    <h2>Caratteristiche generali del servizio:</h2>
+    <ul>
+        <li>Professionalità</li>
+        <li>Puntualità</li>
+        <li>Precisione</li>
+        <li>Cortesia</li>
+        <li>Prezzi fissi</li>
+        <li>Eccellente rapporto qualità-prezzo</li>
+    </ul>
 
-<div class="pagination">
-  {% if paginator.previous_page %}
-      {% if paginator.previous_page == 1 %}
-        <a class="btn btn-default" href="{{ site.baseurl}}/index.html" class="previous">Newer</a>
-      {% else %}
-        <a class="btn btn-default" href="{{ site.baseurl}}/page{{ paginator.previous_page }}" class="previous">Newer</a>
-      {% endif %}
-  {% endif %}
-  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-  {% if paginator.next_page %}
-    <a class="btn btn-default" href="{{ site.baseurl}}/page{{ paginator.next_page }}" class="next">Older</a>
-  {% endif %}
+    <h2>Servizi offerti:</h2>
+    <ul>
+        <li>Lavaggio a secco e ad acqua, stiratura di capi di abbigliamento ed arredamento</li>
+        <li>Rammendo su tessuto e maglia</li>
+        <li>Piccola sartoria</li>
+        <li>Tintura</li>
+        <li>Lavaggio e custodia tappeti</li>
+        <li>Lavaggio e stiratura tende, anche a telaio</li>
+        <li>Lavaggio pelli e pellicce</li>
+        <li>Carte fedeltà</li>
+        <li>Presa e consegna a domicilio di tappeti e tendaggi voluminosi</li>
+    </ul>
+
+
+    <h2>Alcuni prezzi:</h2>
+    <ul>
+        <li>Giacca, pantaloni €4,10</li>
+        <li>Camicia uomo lavata e stirata a mano €3,00</li>
+        <li>Depolverizzazione e lavaggio tappeti €6,00 al Kg</li>
+    </ul>
 </div>
