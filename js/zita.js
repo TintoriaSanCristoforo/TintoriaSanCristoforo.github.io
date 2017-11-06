@@ -41,7 +41,7 @@ var frasi = [
     "Un bucato ben steso si stira meglio",
     "La vita è fatta anche di piccoli piaceri",
     "La pelle bagnata sempre lontana dal calore",
-    "Ognuno faccia il suo lavoro",
+    "Ognuno faccia il proprio lavoro",
     "Per comandare bisogna saper ubbidire",
     "Candeggina e perborato non vanno assieme",
     "Non è tutto oro quello che luccica",
