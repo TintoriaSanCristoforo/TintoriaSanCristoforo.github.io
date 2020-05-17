@@ -19,7 +19,7 @@ var frasi = [
     "Le tarme mangiano più volentieri le parti sporche",
     "Se parli, dì la verità, ma non sempre è il caso di parlare",
     "Occhio non vede, cuore non duole",
-    "Provare sempre gli smacchiatori in una zona nascosta dell&amp;indumento",
+    "Provare sempre gli smacchiatori in una zona nascosta dell'amp;indumento",
     "Meglio un avversario intelligente che un socio stupido",
     "Chi dorme non piglia pesci",
     "Prevenire è meglio che...smacchiare",
